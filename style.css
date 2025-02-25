@@ -1,0 +1,91 @@
+/* Reset CSS (opsional, bisa menggunakan normalize.css juga) */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Ganti dengan font pilihan Anda */
+    line-height: 1.6;
+    color: #333; /* Warna teks dasar */
+    background-color: #f9f9f9; /* Warna latar belakang body */
+}
+
+/* ==================== Header & Navigasi ==================== */
+#header {
+    position: fixed; /* Sticky header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Warna background header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan tipis */
+    z-index: 100; /* Pastikan header selalu di atas konten */
+    transition: height 0.3s ease-in-out; /* Animasi transisi tinggi header */
+    height: 80px; /* Tinggi header default */
+}
+
+#header.sticky {
+    height: 60px; /* Tinggi header saat sticky */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Padding navbar */
+    max-width: 1200px; /* Lebar maksimum navbar */
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Warna logo */
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 2rem; /* Spasi antar item menu */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555; /* Warna link menu */
+    font-weight: 500;
+    position: relative; /* Untuk efek hover underline */
+    padding-bottom: 5px; /* Ruang untuk underline */
+    transition: color 0.3s ease; /* Animasi warna link */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Warna link saat hover (warna aksen, ganti sesuai preferensi) */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff; /* Warna underline saat hover (warna aksen) */
+    transition: width 0.3s ease; /* Animasi lebar underline */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Menu (untuk tampilan mobile) */
+.hamburger {
+    display: none; /* Sembunyikan default, tampilkan di media query mobile */
+    cursor: pointer;
+}
+
+.bar {

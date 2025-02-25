@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya - Nama Anda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">[Logo Anda]</a>  <!-- Ganti dengan Logo Anda (bisa teks/gambar) -->
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#tentang-saya" class="nav-link">Tentang Saya</a></li>
+                <li class="nav-item"><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                <li class="nav-item"><a href="#testimoni" class="nav-link">Testimoni</a></li>
+                <li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bagian Hero Section (bisa digabung dengan Tentang Saya atau terpisah) -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Halo, Saya [Nama Anda]</h1>
+                <p>Seorang [Profesi Anda] yang bersemangat menciptakan solusi kreatif dan inovatif.</p>
+                <a href="#portfolio" class="btn btn-primary">Lihat Portofolio Saya</a>
+            </div>
+        </section>
+
+        <!-- Tentang Saya -->
+        <section id="tentang-saya" class="section">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-content">
+                    <div class="profile-img">
+                        <img src="gambar/profil.jpg" alt="Foto Profil Anda">
+                    </div>
+                    <div class="about-description">
+                        <h3>Siapa Saya?</h3>
+                        <p>Saya adalah seorang [Profesi Anda] dengan pengalaman dalam [Sebutkan pengalaman atau bidang fokus].  Saya memiliki latar belakang di [Sebutkan latar belakang pendidikan atau keahlian spesifik].</p>
+                        <p>**Misi Saya:** [Sebutkan misi profesional Anda, apa yang ingin Anda capai].</p>
+                        <p>**Visi Saya:** [Sebutkan visi karir Anda dalam jangka panjang].</p>
+                        <p>Sejak [Momen penting atau awal karir Anda], saya telah berdedikasi untuk [Cerita singkat atau *passion* Anda di bidang ini].</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <!-- Tambahkan ikon media sosial lainnya -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keahlian (Skills) -->
+        <section id="keahlian" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Keahlian Saya</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Pengembangan website responsif dan interaktif menggunakan HTML, CSS, JavaScript, dan framework modern.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-palette"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang intuitif dan menarik.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Graphic Design</h3>
+                        <p>Desain grafis untuk branding, materi promosi, dan kebutuhan visual lainnya.</p>
+                    </div>
+                    <!-- Tambahkan kartu keahlian lainnya -->
+                </div>
+                <div class="skills-visualization">
+                    <!-- Tambahkan grafik/diagram visualisasi keahlian (contoh: progress bar, donut chart) -->
+                    <!-- Contoh progress bar (butuh CSS & mungkin JS untuk animasi) -->
+                    <div class="skill-progress">
+                        <p>HTML & CSS</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <p>JavaScript</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan progress bar lainnya -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio / Proyek -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Portofolio Saya</h2>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                    <!-- Tambahkan tombol filter kategori lainnya -->
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="gambar/project-1.jpg" alt="Project 1 Thumbnail">
+                        <div class="portfolio-overlay">
+                            <h3>Project Website E-commerce</h3>
+                            <p>Website e-commerce responsif dengan fokus pada pengalaman pengguna yang mudah dan aman.</p>
+                            <button class="btn btn-secondary btn-view-project" data-project-id="1">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="graphic">
+                        <img src="gambar/project-2.jpg" alt="Project 2 Thumbnail">
+                        <div class="portfolio-overlay">
+                            <h3>Desain Logo Perusahaan</h3>
+                            <p>Desain logo minimalis dan modern untuk identitas merek perusahaan teknologi.</p>
+                            <button class="btn btn-secondary btn-view-project" data-project-id="2">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="uiux">
+                        <img src="gambar/project-3.jpg" alt="Project 3 Thumbnail">
+                        <div class="portfolio-overlay">
+                            <h3>Redesain Aplikasi Mobile</h3>
+                            <p>Redesain aplikasi mobile untuk meningkatkan user experience dan tampilan visual yang segar.</p>
+                            <button class="btn btn-secondary btn-view-project" data-project-id="3">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <!-- Tambahkan item portofolio lainnya -->
+                </div>
+            </div>
+
+            <!-- Modal Detail Proyek (Hidden secara default, akan muncul dengan JS) -->
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">×</span>
+                    <h3 id="modal-title"></h3>
+                    <div id="modal-details">
+                        <!-- Konten detail proyek akan di-load di sini menggunakan JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni -->
+        <section id="testimoni" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Testimoni Klien</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial">
+                        <img src="gambar/testimoni-1.jpg" alt="Foto Testimoni 1">
+                        <p class="quote">"[Kutipan Testimoni 1]"</p>
+                        <p class="author">- John Doe, CEO Company A</p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="gambar/testimoni-2.jpg" alt="Foto Testimoni 2">
+                        <p class="quote">"[Kutipan Testimoni 2]"</p>
+                        <p class="author">- Jane Smith, Marketing Manager Company B</p>
+                    </div>
+                    <!-- Tambahkan testimoni lainnya -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="section">
+            <div class="container">
+                <h2 class="section-title">Kontak Saya</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nama Anda</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Anda</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan Anda</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                        <div id="form-message" class="form-message"></div> <!-- Area pesan sukses/error -->
+                    </div>
+                    <div class="contact-info">
+                        <h3>Informasi Kontak</h3>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:emailanda@contoh.com">emailanda@contoh.com</a></p>
+                        <p><i class="fas fa-phone"></i> +62 8XX XXXX XXXX</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <!-- Tambahkan ikon media sosial lainnya -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>© 2023 Portofolio Saya. Hak Cipta Dilindungi.</p>
+            <nav class="footer-nav">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat Penggunaan</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
